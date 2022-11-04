@@ -7,7 +7,7 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    session[:page_views] || = 0
+    session[:page_views] ||= 0
     session[:page_views] += 1
 
     if session[:page_views] <= 3
